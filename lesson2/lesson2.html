@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Basics</title>
+</head>
+
+<table border="1">
+<caption><strong>ОСНОВНЫЕ ТЕГИ HTML</strong></caption>
+<tr>
+    <td colspan="3" style="background-color: #e5e5f9; text-align: center; font-style: italic;"><font color="#7f0000">1) СТРУКТУРА Web-страницы</font></td>
+</tr>
+<tr>
+    <td style="color: #7f0000;"><strong>&lt;html&gt;&lt;/html&gt;</strong></td>
+    <td>Начало и конец страницы</td>
+    <td></td>
+</tr>
+<tr>
+    <td style="color: #7f0000;"><strong>&lt;head&gt;&lt;/head&gt;</strong></td>
+    <td>Описание страницы, содержащее различную информацию, не отображаемую в теле документа. Здесь располагается тег имени страницы и теги для поисковых машин.</td>
+    <td></td>
+</tr>
+<tr>
+    <td style="color: #7f0000;"><strong>&lt;title&gt;&lt;/title&gt;</strong></td>
+    <td>Имя страницы</td>
+    <td></td>
+</tr>
+<tr>
+    <td style="color: #7f0000;"><strong>&lt;body&gt;&lt;/body&gt;</strong></td>
+    <td>Определяет видимую часть страницы</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="3"></td>
+</tr>
+
+<tr style="background-color: #e5e5f9; text-align: center;">
+    <td colspan="2"><font color="#7f0000"><em>2) АТРИБУТЫ ТЕЛА ДОКУМЕНТА</em></font></td>
+    <td><font color="#7f0000"><em>Значения атрибутов</em></font></td>
+</tr>
+<tr>
+    <td style="color: #7f0000;">&lt;body <em>background</em>="URL"&gt;</td>
+    <td>Фоновое изображение</td>
+    <td></td>
+</tr>
+<tr>
+    <td style="color: #7f0000;">&lt;body <em>bgcolor</em>="#RRGGBB"&gt;</td>
+    <td>Цвет фона документа, используя значение цвета в виде RRGGBB - пример: FF0000 - красный цвет.</td>
+    <td rowspan="5">red, blue, #FF0000 и др.</td>
+</tr>
+<tr>
+    <td style="color: #7f0000;">&lt;body <em>text</em>="#RRGGBB"&gt;</td>
+    <td>Цвет текста документа, используя значение цвета в виде RRGGBB - пример: 000000 - черный цвет.</td>
+</tr>
+<tr>
+    <td style="color: #7f0000;">&lt;body <em>link</em>="#RRGGBB"&gt;</td>
+    <td>Устанавливает цвет гиперссылок, используя значение цвета в виде RRGGBB - пример: 00FF00 - зеленый цвет.</td>
+</tr>
+<tr>
+    <td style="color: #7f0000;">&lt;body <em>vlink</em>="#RRGGBB"&gt;</td>
+    <td>Устанавливает цвет гиперссылок, на которых вы уже побывали, используя значение цвета в виде RRGGBB - пример: 333333 - серый цвет.</td>
+</tr>
+<tr>
+    <td style="color: #7f0000;">&lt;body <em>alink</em>="#RRGGBB"&gt;</td>
+    <td>Устанавливает цвет гиперссылок при нажатии.</td>
+</tr>
+<tr>
+    <td colspan="3"></td>
+</tr>
+
+<tr style="background-color: #e5e5f9; text-align: center;">
+    <td colspan="2"><font color="#7f0000"><em>3) ТЕГИ ДЛЯ ФОРМАТИРОВАНИЯ ТЕКСТА</em></font></td>
+    <td><font color="#7f0000"><em>Значения атрибутов</em></font></td>
+</tr>
+<tr>
+    <td style="color: #7f0000;">&lt;h?&gt;&lt;/h?&gt;</td>
+    <td>Создает заголовок (уровни от 1 до 6)</td>
+    <td></td>
+</tr>
+<tr>
+    <td style="color: #7f0000;">&lt;h? <em>align</em>="*"&gt;&lt;/h?&gt;</td>
+    <td>Заголовок с выравниванием</td>
+    <td>left, right, center</td>
+</tr>
+<tr>
+    <td style="color: #7f0000;">&lt;p&gt;&lt;/p&gt;</td>
+    <td>Создает новый параграф</td>
+    <td></td>
+</tr>
+<tr>
+    <td style="color: #7f0000;">&lt;p <em>align</em>="*"&gt;&lt;/p&gt;</td>
+    <td>Выравнивает параграф относительно одной из сторон документа</td>
+    <td>left, right, center, justify</td>
+</tr>
+<tr>
+    <td style="color: #7f0000;">&lt;br&gt;</td>
+    <td>Вставляет перевод строки</td>
+    <td></td>
+</tr>
+<tr>
+    <td style="color: #7f0000;">&lt;center&gt;&lt;/center&gt;</td>
+    <td>Выравнивание по центру</td>
+    <td></td>
+</tr>
+<tr>
+    <td style="color: #7f0000;">&lt;div <em>align</em>="*"</td>
+    <td>Форматирование больших блоков текста страницы, также используется в таблицах стилей</td>
+    <td>left, right, center, justify</td>
+</tr>
+<tr>
+    <td colspan="3"></td>
+</tr>
+
+<tr style="background-color: #e5e5f9; text-align: center;">
+    <td colspan="2"><font color="#7f0000"><em>4) ТЕГИ ДЛЯ ФОРМАТИРОВАНИЯ ШРИФТА</em></font></td>
+    <td><font color="#7f0000"><em>Значения атрибутов</em></font></td>
+</tr>
+
+<tr>
+    <td style="color: #7f0000;">&lt;b&gt;&lt;/b&gt;</td>
+    <td><b>Жирный</b></td>
+    <td></td>
+</tr>
+<tr>
+    <td style="color: #7f0000;">&lt;i&gt;&lt;/i&gt;</td>
+    <td><i>Курсив</i></td>
+    <td></td>
+</tr>
+<tr>
+    <td style="color: #7f0000;">&lt;u&gt;&lt;/u&gt;</td>
+    <td><u>Подчеркнутый</u></td>
+    <td></td>
+</tr>
+<tr>
+    <td style="color: #7f0000;">&lt;sup&gt;&lt;/sup&gt;</td>
+    <td><sup>Верхний индекс - пример: a<sup>2</sup></td>
+    <td></td>
+</tr>
+<tr>
+    <td style="color: #7f0000;">&lt;sub&gt;&lt;/sub&gt;</td>
+    <td><sup>Нижний индекс - пример: a<sub>2</sub></td>
+    <td></td>
+</tr>
+<tr>
+    <td style="color: #7f0000;">&lt;font <em>size</em>=?&gt;&lt;/font&gt;</td>
+    <td>Размер шрифта в пределах от 1 до 7</td>
+    <td></td>
+</tr>
+
+</table>
+</html>
