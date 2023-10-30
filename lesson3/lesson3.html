@@ -1,89 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>HTML Basics</title>
-    </head>
-    <body>
-<h1>Форма заявки на работу в зоопарке</h1>
-<p><em>Пожалуйста заполните форму. Обязательные поля помечены *</em></p>
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Basics</title>
+</head>
+
+<body>
+  <h1>Форма заявки на работу в зоопарке</h1>
+  <p><em>Пожалуйста заполните форму. Обязательные поля помечены *</em></p>
 
 
-<form name="form">
+  <form name="form">
     <fieldset>
-        <legend>Контактная информация</legend>
-        <label>
-            Имя *
-            <input type="text">
-        </label><br>
-        <label>
-            Телефон
-            <input type="tel">
-        </label><br>
-        <label>
-            Email *
-            <input type="email">
-        </label><br>
+      <legend>Контактная информация</legend>
+      <label>
+        Имя *
+        <input type="text">
+      </label><br>
+      <label>
+        Телефон
+        <input type="tel">
+      </label><br>
+      <label>
+        Email *
+        <input type="email">
+      </label><br>
     </fieldset>
 
     <fieldset>
-        <legend>Персональная информация</legend>
-        <label>
-            Возраст *
-            <input type="text">
-        </label><br>
-        <label>
-            Пол
-            <select name="gender">
-                <option value="Женщина">Женщина</option>
-                <option value="Мужчина">Мужчина</option>
-            </select>
-        </label><br>
-        <label>
-            Перечислите личные качества
-            <textarea name="text" cols="45" rows="10"></textarea>
-        </label><br>
+      <legend>Персональная информация</legend>
+      <label>
+        Возраст *
+        <input type="number">
+      </label><br>
+      <label>
+        Пол
+        <select name="gender">
+          <option value="Женщина">Женщина</option>
+          <option value="Мужчина">Мужчина</option>
+        </select>
+      </label><br>
+      <label>
+        Перечислите личные качества
+        <textarea name="text" cols="45" rows="10"></textarea>
+      </label><br>
     </fieldset>
 
     <fieldset>
-        <legend>Выберите ваших любимых животных</legend>
-        <label>
-            <input type="checkbox">
-            Зебра
-        </label>
-        <label>
-            <input type="checkbox">
-            Кошак
-        </label>
-        <label>
-            <input type="checkbox">
-            Анаконда
-        </label>
-        <label>
-            <input type="checkbox">
-            Человек
-        </label>
-        <br>
-        <label>
-            <input type="checkbox">
-            Слон
-        </label>
-        <label>
-            <input type="checkbox">
-            Антилопа
-        </label>
-        <label>
-            <input type="checkbox">
-            Голубь
-        </label>
-        <label>
-            <input type="checkbox">
-            Краб
-        </label>
+      <legend>Выберите ваших любимых животных</legend>
+      <label>
+        <input type="checkbox" name="a" value="Зебра">
+        Зебра
+      </label>
+      <label>
+        <input type="checkbox" name="a" value="Кошак">
+        Кошак
+      </label>
+      <label>
+        <input type="checkbox" name="a" value="Анаконда">
+        Анаконда
+      </label>
+      <label>
+        <input type="checkbox" name="a" value="Человек">
+        Человек
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" name="a" value="Слон">
+        Слон
+      </label>
+      <label>
+        <input type="checkbox" name="a" value="Антилопа">
+        Антилопа
+      </label>
+      <label>
+        <input type="checkbox" name="a" value="Голубь">
+        Голубь
+      </label>
+      <label>
+        <input type="checkbox" name="a" value="Краб">
+        Краб
+      </label>
     </fieldset>
 
     <input type="submit" value="Отправить информацию">
-</form>
-    </body>
+  </form>
+
+</body>
 </html>
