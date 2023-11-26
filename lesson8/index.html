@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
+</head>
+
+<body>
+
+  <form class="forma" action="#" method="post">
+    
+  <section class="block">
+    <div class="block1">
+      <h2 class="text1">Оформить заказ</h2>
+      <label class="text2">ФИО*<input class="block1_input" type="text" name="username" placeholder="Введите ваши ФИО"></label>
+      <label class="text2">Телефон*<input class="block1_input" type="tel" name="tel" placeholder="Введите ваш номер телефона"></label>
+      <label class="text2">Email*<input class="block1_input" type="email" name="email" placeholder="Введите ваши email"></label>
+      <label class="text2">Адрес*<input class="block1_input" type="text" name="adress" placeholder="Введите ваш адрес"></label>
+      <label class="text2">Примечание к заказу<input class="block1_input notation" type="text" name="notation"></label>
+    </div>
+
+    <div class="block2">
+      <h2 class="text1">Способ доставки</h2>
+      <input class="block2_input" type="radio" checked id="delivery1" name="delivery" value="Склад РБ">
+      <label class="text4" for="delivery1">Склад РБ</label>
+      <p class="text3">Это самый удобный, бесплатный и быстрый способ получения заказа!</p>
+      <p class="text3">Адрес склада: г.Гродно, ул. Горького, 91</p>
+      <p class="text3 text5">Отгрузка осуществляется по предварительной договоренности, телефон для связи +375 (15) 261 08 81</p>
+      <input class="block2_input" type="radio" id="delivery2" name="delivery" value="Склад РФ">
+      <label class="text4" for="delivery2">Склад РФ</label>
+      <p class="text3">Это самый удобный, бесплатный и быстрый способ получения заказа!</p>
+      <p class="text3">Адрес склада: г. Подольск, ул. Вишневая, д.7, склад 11</p>
+      <p class="text3 text5">Отгрузка осуществляется по предварительной договоренности, телефон для связи +7 919 045 55 88</p>
+      <input class="block2_input" type="radio" id="delivery3" name="delivery" value="Доставка">
+      <label class="text4" for="delivery3">Доставка</label>
+      <p class="text3">Сроки доставки товара покупателю устанавливаются договором. Если доставка товара произведена в установленные договором сроки, но товар не был передан покупателю по его вине, повторная доставка производится после повторной оплаты покупателем стоимости услуг по доставке товара.</p>
+    </div>
+  </section> 
+
+    <input class="input" type="submit" value="оформить заказ">
+
+  </form>
+
+</body>
+
+</html>
