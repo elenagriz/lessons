@@ -1,0 +1,182 @@
+@media (max-width: 1160px) {
+  .icon {
+    display: none;
+  }
+}
+
+@media (max-width: 956px) {
+  .man {
+    display: none;
+  }
+}
+
+@media (max-width: 833px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  background: #101413;
+  background-image: url(../img/img1.png);
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 680px;
+  padding-top: 182px;
+  position: relative;
+  margin: auto;
+}
+
+.container {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu {
+  max-width: 1300px;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo {
+  margin-right: 32px;
+}
+
+.menu_item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.navigation {
+  display: flex;
+  gap: 30px;
+}
+
+.navigation a {
+  font: 300 20px/24px 'Montserrat', sans-serif;
+  color: #cbcbcb;
+}
+
+.icon {
+  margin-right: 15px;
+}
+
+.man {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #06F;
+  background-image: url(../img/man.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 5px;
+  margin: -10px 20px 0 55px;
+}
+
+.btn {
+  text-transform: uppercase;
+  font: 300 20px/24px 'Montserrat', sans-serif;
+  color: #fff;
+  width: 240px;
+  padding: 13px 20px;
+  border: 1px solid #fff;
+  display: inline-block;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.content1 {
+  width: 391px;
+  font: 300 14px/18.2px 'Montserrat', sans-serif;
+  font-style: italic;
+  margin: auto;
+  color: #CBCBCB;
+  text-align: center;
+}
+
+.title {
+  width: 680px;
+  font: 400 60px/78px 'Candal', sans-serif;
+  color: #fff;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.title_text {
+  color: #FF4C24;
+}
+
+.content2 {
+  width: 679px;
+  font: 300 20px/26px 'Montserrat', sans-serif;
+  color: #CBCBCB;
+  margin: 30px auto 100px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn1 {
+  text-transform: uppercase;
+  font: 400 30px/30px 'Candal', sans-serif;
+  color: #FF4C24;
+  width: 420px;
+  height: 60px;
+  border: 1px solid #FF4C24;
+  background: rgba(255, 76, 36, 0.15);
+  backdrop-filter: blur(10px);
+  display: inline-block;
+  padding: 14px 70px 16px;
+}
+
+.btn2 {
+  text-transform: uppercase;
+  font: 400 30px/30px 'Candal', sans-serif;
+  color: #101413;
+  width: 200px;
+  height: 60px;
+  background: #59FFB7;
+  display: inline-block;
+  padding: 14px 60px;
+}
+
+.oval {
+  width: 1300px;
+  height: 260px;
+  border-radius: 1300px;
+  background: linear-gradient(180deg, rgba(32, 255, 215, 0.40) 0%, rgba(237, 255, 32, 0.40) 100%);
+  filter: blur(250px);
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
