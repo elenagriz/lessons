@@ -9,7 +9,7 @@ li {
   list-style: none;
 }
 
-.forma {
+.form {
   width: 100%;
   padding: 20px;
 }
@@ -18,16 +18,16 @@ li {
   width: 605px;
 }
 
-.block1_input {
+.input {
   width: 605px;
-  box-shadow: 0px 0px 10px 0px rgba(38, 41, 46, 0.25);
+  border: 1px solid #000;
   margin: 10px 0 19px 0;
   font: 500 16px/19.2px 'Montserrat', sans-serif;
   color: #C4C4C4;
   padding: 14px 0 14.5px 19px;
 }
 
-.input {
+.btn {
   background: #408858;
   width: 262px;
   height: 58.4px;
@@ -35,6 +35,14 @@ li {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
+}
+
+.input.error {
+  border-color: red;
+}
+
+.checkbox__input.error + .checkbox__label {
+  color: red;
 }
 
 .text2 {
