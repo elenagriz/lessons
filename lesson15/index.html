@@ -9,15 +9,16 @@
 
 <body>
 
-  <form class="forma" action="#" method="post">
+  <form class="form" action="#" method="post">
     
     <div class="block">
-      <label class="text2">Имя<input class="block1_input username field" type="text" name="username" placeholder="Введите ваше имя"></label>
-      <label class="text2">Телефон<input class="block1_input tel field" type="tel" name="tel" placeholder="Введите ваш номер телефона"></label>
-      <label class="text2">Согласен<input type="checkbox" class="accord field" name="accord"></label>
+      <label class="text2">Имя<input class="input js-input" type="text" name="name" placeholder="Введите ваше имя"></label>
+      <label class="text2">Телефон<input class="input js-input js-input-phone" type="tel" name="tel" placeholder="Введите ваш номер телефона"></label>
+      <input type="checkbox" class="checkbox__input js-input-checkbox" name="accord">
+      <label class="text2 checkbox__label">Согласен</label>
     </div>
 
-  <input class="input" type="submit" value="отправить">
+  <input class="btn" type="submit" value="отправить">
 
   </form>
 

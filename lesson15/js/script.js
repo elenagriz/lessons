@@ -1,27 +1,45 @@
-let form = document.querySelector('.forma');
-let validateBtn = form.querySelector('.input');
-/*var username = form.querySelector('.username');
-var tel = form.querySelector('.tel');
-var accord = form.querySelector('.accord');
-form.addEventListener('submit', function (event) {
-  event.preventDefault();
-  console.log('clicked on validate');
-  console.log('Имя: ', username.value);
-  console.log('Телефон: ', tel.value);
-  console.log('Согласие: ', accord.value);
-})*/
+let form = document.querySelector('.form'),
+formInputs = document.querySelectorAll('.js-input'),
+inputPhone = document.querySelector('.js-input-phone'),
+inputCheckbox = document.querySelector('.js-input-checkbox');
 
-let fields = form.querySelectorAll('.field')
-form.addEventListener('submit', function (event) {
-  event.preventDefault()
-  for (let i = 0; i < fields.length; i++) {
-    if (!fields[i].value) {
-      console.log('Пустое поле', fields[i])
-      let error = document.createElement('div')
-      error.className='error'
-      error.style.color = 'red'
-      error.innerHTML = 'Поле не может быть пустым'
-      form[i].parentElement.insertBefore(error, fields[i])
+function validatePhone(phone) {
+  let re = /^[0-9\s]*$/;
+  return re.test(String(phone));
+}
+
+form.onsubmit = function () {
+  let phoneVal = inputPhone.value,
+  emptyInputs = Array.from(formInputs).filter(input => input.value === '');
+  
+  formInputs.forEach(function(input) {
+    if (input.value === '') {
+      input.classList.add('error');
+      
+    } else {
+      input.classList.remove('error');
     }
+  });
+
+  if (emptyInputs.length !== 0) {
+    console.log('inputs not filled');
+    return false;
   }
-})
+
+  if (!validatePhone(phoneVal)) {
+    console.log('phone not valid');
+    inputPhone.classList.add('error');
+    return false;
+  } else {
+    inputPhone.classList.remove('error');
+  }
+
+  if (!inputCheckbox.checked) {
+    console.log('checkbox not checked');
+    inputCheckbox.classList.add('error');
+    return false;
+  } else {
+    inputCheckbox.classList.remove('error');
+  }
+  
+}
