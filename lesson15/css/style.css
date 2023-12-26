@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.form {
+  width: 100%;
+  padding: 20px;
+}
+
+.block {
+  width: 605px;
+}
+
+.input {
+  width: 605px;
+  border: 1px solid #000;
+  margin: 10px 0 19px 0;
+  font: 500 16px/19.2px 'Montserrat', sans-serif;
+  color: #C4C4C4;
+  padding: 14px 0 14.5px 19px;
+}
+
+.btn {
+  background: #408858;
+  width: 262px;
+  height: 58.4px;
+  font: 500 20px/24px 'Roboto', sans-serif;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.input.error {
+  border-color: red;
+}
+
+.checkbox__input.error + .checkbox__label {
+  color: red;
+}
+
+.text2 {
+  font: 500 20px/24px 'Montserrat', sans-serif;
+  color: #26292E;
+}
